@@ -236,3 +236,5 @@ Check all members of group
 Remove user from group
 `sudo deluser $username $groupname`
 
+### Change hostname
+`sudo nano /etc/hostname`
