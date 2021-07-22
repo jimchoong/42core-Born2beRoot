@@ -209,6 +209,9 @@ Setting cron job as root
 To set up cron job to broadcast every 10 minutes
 `*/10 * * * * bash $path/to/monitoring.sh`
 
+To check scheduled cron job
+`sudo crontab -u root -l`
+
 Refer to monitoring.sh for broadcast script.
 
 ## 6. Set up new user and new group
