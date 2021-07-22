@@ -1,6 +1,6 @@
 #!/bin/bash
 arch=$(uname -a)
-numproc=$(grep "cpu cores" /proc/cpuinfo | awk '{print $4}')
+numproc=$(grep "physical id" /proc/cpuinfo | uniq | wc -l)
 numvcpu=$(nproc)
 totram=$(free -m | awk '$1 == "Mem:" {print $2}')
 usedram=$(free -m | awk '$1 == "Mem:" {print $3}')
