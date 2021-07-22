@@ -37,7 +37,7 @@ https://gitlab.com/apparmor/apparmor/-/wikis/home
 2. Installing sudo, configuring sudoer
 3. Installing SSH, UFW
 4. Setting password policy
-5. Cron, monitoring.sh
+5. Cron set up, monitoring.sh
 6. Set up new user and new group 
 
 
@@ -195,4 +195,41 @@ Enforce root password to follow this police
 
 Combining the configuration to one line
 `password requisite     pam_pwquality.so retry=3 minlen=10 maxrepeat=3 ucredit=-1 dcredit=-1 difok=7 reject_username enforce_for_root`
+
+## 5. Cron set up, monitoring.sh
+
+### What is cron?
+Cron is a time-based job scheduler in Unix-like system. The cron jobs are saved as crontab files for each user.
+
+Set up process can be watched [here](https://youtu.be/JwCUnzgaIh0)
+
+Setting cron job as root
+`sudo crontab -u root -e`
+
+To set up cron job to broadcast every 10 minutes
+`*/10 * * * * bash $path/to/monitoring.sh`
+
+Refer to monitoring.sh for broadcast script.
+
+## 6. Set up new user and new group
+To create new user
+`sudo adduser $username`
+
+Get user password info
+`sudo chage -l $username`
+
+Force user to reset password on next login
+`passwd --expire $username`
+
+Make new group
+`sudo addgroup $groupname`
+
+Add user to group
+`sudo adduser $username $groupname`
+
+Check all members of group
+`getent group $groupname`
+
+Remove user from group
+`sudo deluser $username $groupname`
 
