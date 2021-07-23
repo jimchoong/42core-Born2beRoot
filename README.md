@@ -138,6 +138,8 @@ Change `#PermitRootLogin prohibit-password` to `PermitRootLogin no` to disable S
 `sudo ufw enable`
 4. Set firewall to only allow port 4242
 `sudo ufw allow 4242`
+5. Delete port that was allowed
+`sudo ufw delete $rule_number`
 
 ### Connecting via SSH
 1. Get ip address of VM
