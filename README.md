@@ -46,7 +46,7 @@ Installation of Debian, disk partitioning was done according to set up for manda
 Please watch here - https://youtu.be/r_UuqrbwgtI
 
 ## 2. Installing sudo, configuring sudoer
-Steps recorded in video here- https://youtu.be/r_UuqrbwgtI
+Steps recorded in video here- https://youtu.be/ftDsXRBt5dA
 
 ### Why use sudo?
 - not advisable to do superuser tasks using root; may inflict permanent damage to system (deleting sys files, locking out admin rights, etc)
