@@ -43,10 +43,10 @@ https://gitlab.com/apparmor/apparmor/-/wikis/home
 
 ## 1. Debian installation, disk partitioning
 Installation of Debian, disk partitioning was done according to set up for mandatory portion. 
-Please watch [here](https://youtu.be/r_UuqrbwgtI).
+Please watch here - https://youtu.be/r_UuqrbwgtI
 
 ## 2. Installing sudo, configuring sudoer
-Steps recorded in video [here](https://youtu.be/r_UuqrbwgtI)
+Steps recorded in video here- https://youtu.be/r_UuqrbwgtI
 
 ### Why use sudo?
 - not advisable to do superuser tasks using root; may inflict permanent damage to system (deleting sys files, locking out admin rights, etc)
@@ -207,7 +207,7 @@ Combining the configuration to one line
 ### What is cron?
 Cron is a time-based job scheduler in Unix-like system. The cron jobs are saved as crontab files for each user.
 
-Set up process can be watched [here](https://youtu.be/JwCUnzgaIh0)
+Set up process can be watched here- https://youtu.be/JwCUnzgaIh0
 
 Setting cron job as root
 `sudo crontab -u root -e`
