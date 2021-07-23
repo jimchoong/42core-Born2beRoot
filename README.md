@@ -111,6 +111,10 @@ Restrict path used by sudo command
 
 ## 3. Installing SSH, UFW
 
+### What is SSH?
+SSH stands for Secure SHell protocol, a network protocol that gives sysadmins a secure way to access remote assets over unsecured network. SSH provides password or public-key based authentication and encrypts connections between two endpoints.
+https://www.keyfactor.com/blog/ssh-protocol/
+
 ### Installing SSH
 1. Update apt package
 `sudo apt update`
