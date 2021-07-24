@@ -43,6 +43,7 @@ https://gitlab.com/apparmor/apparmor/-/wikis/home
 
 ## 1. Debian installation, disk partitioning
 Installation of Debian, disk partitioning was done according to set up for mandatory portion. 
+Version of Debian used - 10.10.0-amd64-netinst
 Please watch here - https://youtu.be/r_UuqrbwgtI
 
 ## 2. Installing sudo, configuring sudoer
